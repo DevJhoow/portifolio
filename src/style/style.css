@@ -1,0 +1,114 @@
+/* Resetando o padding e margin para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo fontes e estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+}
+
+.full-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+/* Seção principal */
+.main-section {
+  background-color: #f0f4f8;
+  padding: 50px 0;
+}
+
+/* Botões */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  border-color: #0056b3;
+  color: #0056b3;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Cards de Projetos */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#sobre-mim {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+#projetos {
+  background-color: #ffffff;
+}
+
+#rodape {
+  background-color: #343a40;
+}
+
