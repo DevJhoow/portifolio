@@ -20,24 +20,22 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <h2 class="navbar-brand d-flex align-items-center">
-            <strong>Jonathan Luis</strong>
-          </h2>
-          <div class="d-flex align-items-center gap-3">
-              <!-- Ícones das Redes Sociais -->
-              <a href="https://www.linkedin.com/in/jonathanluis/" target="_blank" class="text-white">
-                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-              </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Alternar navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Jonathan Luis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mim">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
+    
     
     <!-- Conteúdo Principal -->
     <main>
@@ -45,13 +43,16 @@
       <section id="sobre-mim" class="main-section text-center container">
         <div class="row py-lg-5 align-items-center">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-bold text-primary mb-3">Olá, sou Jonathan Luis!</h1>
+            <h1 class="fw-bold text-primary mb-3">Olá, eu sou o Jonathan Luis!</h1>
             <p class="lead text-body-secondary mb-4">
-              "Trabalhei como técnico de telecomunicações e fiquei encantado com a complexidade dos sistemas, o que me motivou a me aprofundar no mundo do desenvolvimento. Atualmente, no 4º semestre de Análise e Desenvolvimento de Sistemas (ADS), estou me preparando para iniciar minha oportunidade no mercado de trabalho".
+                Sou um desenvolvedor de software. Atualmente
+                estou no 4º semestre de Análise e Desenvolvimento de Sistemas,
+                focado em PHP, Laravel e JavaScript. 
+                Busco minha primeira oportunidade profissional na área para aplicar meus conhecimentos
+                e continuar crescendo como desenvolvedor.
             </p>
             <div class="d-flex justify-content-center gap-4">
-              <a href="link-para-seu-curriculo.pdf" class="btn btn-primary btn-lg" target="_blank">Ver Currículo</a>
-            </div>
+              <a href="src/img/curriculum.pdf" class="btn btn-primary btn-lg" target="_blank">Baixar Meu Currículo</a>            </div>
           </div>
             <div class="col-lg-6 col-md-2 mx-auto mt-6 mt-lg-0">
                   <img src="src/img/j.jpeg" class="img-fluid rounded-circle" 
@@ -68,76 +69,51 @@
             <!-- Card PHP -->
             <div class="col-md-4">
               <div class="card shadow-sm">
-                <img class="card-img-top" src="src/img/php.jpg" alt="Projeto PHP" width="100%" height="225">
+                <img class="card-img-top" src="src/img/php.jpg" alt="Projeto PHP">
                 <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Deploy</button>
-                    </div>
+                  <h5 class="fw-bold">Sistema de Análise de Tendências</h5>
+                  <p>
+                    HTML, CSS e JavaScript , PHP(padrão MVC), Chart.js
+                </p>
+                  <div class="d-flex justify-content-between">
+                    <a href="https://seu-deploy.com" class="btn btn-primary btn-sm" target="_blank">configurando para deploy</a>
+                    <a href="https://github.com/DevJhoow/trend_analyzer" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Card JavaScript -->
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <img class="card-img-top" src="src/img/js.jpg" alt="Projeto JavaScript" width="100%" height="225">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Deploy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card Laravel -->
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <img class="card-img-top" src="src/img/laravel.jpg" alt="Projeto Laravel" width="100%" height="225">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Deploy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            
     </main>
 
     <!-- Section 3: Rodapé -->
-    <footer id="rodape" class="bg-dark text-white pt-5 pb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="mb-0">&copy; Jonathan Luis 2024  /></p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <!-- Redes sociais no rodapé -->
-            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="text-white me-3">
-              <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-            </a>
-            <a href="https://www.instagram.com/seu-perfil" target="_blank" class="text-white me-3">
-              <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-            </a>
-            <a href="https://www.youtube.com/c/seu-canal" target="_blank" class="text-white">
-              <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
-            </a>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col text-center">
-            <a href="#" class="text-white">Voltar ao topo</a>
-          </div>
-        </div>
+    <footer class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <!-- Direitos Autorais -->
+        <p class="mb-0">&copy; 2025 Jonathan Luis - Todos os direitos reservados.</p>
+    
+        <!-- Seção de Contato -->
+        <section id="contato" class="d-flex align-items-center gap-3">
+          <p class="mb-0">Entre em contato.</p>
+
+          <!-- Ícones Redes Sociais -->
+
+          <!-- email -->
+          <a href="mailto:jonathan.luisrodrigues@email.com" class="text-white">
+            <i class="bi bi-envelope-fill" style="font-size: 1.8rem;"></i>
+          </a>
+          <!-- likedin -->
+          <a href="https://www.linkedin.com/in/jonathanluis/" target="_blank" class="text-white">
+            <i class="bi bi-linkedin" style="font-size: 1.8rem;"></i>
+          </a>
+          <!-- github -->
+          <a href="https://github.com/DevJhoow" target="_blank" class="text-white">
+            <i class="bi bi-github" style="font-size: 1.8rem;"></i>
+          </a>
+        </section>
       </div>
     </footer>
+    
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
